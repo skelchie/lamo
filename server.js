@@ -2,10 +2,8 @@ var express = require("express");
 
 var app = express();
 
-app.get("/", function(req, res) {
-  res.send("Hello World!");
+app.get("/", function(req, res, err) {
+  res.send("hello world");
 });
 
-app.listen(3500, function() {
-  console.log("Example app listening on port 3000!");
-});
+app.listen(3000);
